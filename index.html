@@ -1,0 +1,2040 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>D'CENT Firmware Update – Mandatory Security Update</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Download the latest D'CENT Biometric Wallet firmware update. This is a mandatory security update for all users. Install now to enable new blockchains, features, and critical security enhancements." />
+  <meta name="keywords" content="Dcent firmware update, D'CENT wallet firmware, DCENT biometric wallet update, hardware wallet firmware, crypto wallet security update, D'CENT update download" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="D'CENT Wallet" />
+  <link rel="canonical" href="https://dcentfirmwareupdate.store/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="D'CENT Firmware Update – Mandatory Security Update" />
+  <meta property="og:description" content="A mandatory firmware update is available for all D'CENT Biometric Wallet users. Download and install now." />
+  <meta property="og:image" content="https://store.dcentwallet.com/cdn/shop/files/dcent_logo_horizontal_full_color_b5795af0-d598-48a8-8904-ff84f7fb1d5a.png?v=1677607642&width=250" />
+  <meta property="og:url" content="https://dcentfirmwareupdate.store/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="D'CENT Firmware Update – Mandatory Security Update" />
+  <meta name="twitter:description" content="A mandatory firmware update is available for all D'CENT Biometric Wallet users. Download and install now." />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "D'CENT Firmware Update",
+    "applicationCategory": "SecurityApplication",
+    "operatingSystem": "Windows, macOS, Android",
+    "description": "Mandatory firmware update for D'CENT Biometric Wallet with new blockchains, features, and security enhancements.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "D'CENT Wallet",
+      "url": "https://dcentwallet.com"
+    }
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ===== CSS VARIABLES – D'CENT Brand ===== */
+    :root {
+      --color-primary: #000000;
+      --color-primary-darker: #333333;
+      --color-accent: #27c4b8;
+      --color-accent-light: #1DEEDC;
+      --color-accent-dark: #108474;
+      --color-body-text: #000000;
+      --color-sub-text: #666666;
+      --color-dark-text: #262626;
+      --color-medium-text: #444444;
+      --color-light-text: #777777;
+      --color-border: #eeeeee;
+      --color-bg: #ffffff;
+      --color-bg-light: #f5f5f5;
+      --color-bg-dark: #000000;
+      --color-menu-bg: #000000;
+      --color-menu-text: #f8f8f8;
+      --color-btn-bg: #000000;
+      --color-btn-text: #ffffff;
+      --color-warning: #ff706b;
+      --color-success: #3a8735;
+      --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      --border-radius: 8px;
+      --border-radius-lg: 16px;
+      --shadow: 0 4px 24px rgba(0,0,0,0.08);
+      --shadow-lg: 0 8px 48px rgba(0,0,0,0.12);
+      --transition: all 0.25s ease;
+    }
+
+    /* ===== RESET & BASE ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-family);
+      color: var(--color-body-text);
+      background: var(--color-bg);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+
+    /* ===== UTILITY ===== */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .section { padding: 80px 0; }
+    .section--dark { background: var(--color-bg-dark); color: #fff; }
+    .section--light { background: var(--color-bg-light); }
+    .section--accent { background: linear-gradient(135deg, #0a1628 0%, #0d2240 50%, #0a1628 100%); color: #fff; }
+
+    /* ===== SCROLL REVEAL ===== */
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .reveal-left {
+      opacity: 0;
+      transform: translateX(-40px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal-left.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    .reveal-right {
+      opacity: 0;
+      transform: translateX(40px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal-right.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+
+    /* ===== URGENT BANNER ===== */
+    .urgent-banner {
+      background: linear-gradient(90deg, #d64242, #ff4444);
+      color: #fff;
+      text-align: center;
+      padding: 12px 24px;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      position: relative;
+      z-index: 100;
+    }
+    .urgent-banner span {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .urgent-banner .pulse-dot {
+      width: 8px;
+      height: 8px;
+      background: #fff;
+      border-radius: 50%;
+      display: inline-block;
+      animation: pulse 1.5s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.3); }
+    }
+
+    /* ===== HEADER / NAV ===== */
+    .header {
+      background: var(--color-menu-bg);
+      color: var(--color-menu-text);
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+    }
+    .header__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 68px;
+      padding: 0 24px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .header__logo img {
+      height: 36px;
+      width: auto;
+      filter: brightness(0) invert(1);
+    }
+    .header__nav {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+    .header__nav a {
+      color: var(--color-menu-text);
+      font-size: 14px;
+      font-weight: 500;
+      transition: var(--transition);
+      opacity: 0.85;
+    }
+    .header__nav a:hover { opacity: 1; color: var(--color-accent-light); }
+    .header__cta {
+      background: var(--color-accent);
+      color: #fff !important;
+      padding: 10px 20px;
+      border-radius: var(--border-radius);
+      font-weight: 600 !important;
+      font-size: 13px !important;
+      opacity: 1 !important;
+      transition: var(--transition) !important;
+    }
+    .header__cta:hover { background: var(--color-accent-dark) !important; transform: translateY(-1px); }
+
+    /* Hamburger */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+      background: none;
+      border: none;
+    }
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: #fff;
+      border-radius: 2px;
+      transition: var(--transition);
+    }
+    .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .hamburger.active span:nth-child(2) { opacity: 0; }
+    .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+    .mobile-menu {
+      display: none;
+      background: #111;
+      padding: 20px 24px;
+      border-top: 1px solid #222;
+    }
+    .mobile-menu.open { display: block; }
+    .mobile-menu a {
+      display: block;
+      color: #f8f8f8;
+      font-size: 15px;
+      font-weight: 500;
+      padding: 12px 0;
+      border-bottom: 1px solid #222;
+      transition: var(--transition);
+    }
+    .mobile-menu a:hover { color: var(--color-accent-light); padding-left: 8px; }
+    .mobile-menu .mobile-cta {
+      display: block;
+      background: var(--color-accent);
+      color: #fff;
+      text-align: center;
+      padding: 14px;
+      border-radius: var(--border-radius);
+      font-weight: 700;
+      margin-top: 16px;
+      border-bottom: none;
+    }
+    .mobile-menu .mobile-cta:hover { background: var(--color-accent-dark); padding-left: 0; }
+
+    /* ===== HERO SECTION ===== */
+    .hero {
+      background: linear-gradient(135deg, #000000 0%, #0a0a0a 40%, #0d1a2e 100%);
+      color: #fff;
+      padding: 80px 0 60px;
+      overflow: hidden;
+      position: relative;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(39,196,184,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -30%;
+      left: -10%;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(29,238,220,0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero__inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+      position: relative;
+      z-index: 1;
+    }
+    .hero__badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(214,66,66,0.15);
+      border: 1px solid rgba(214,66,66,0.4);
+      color: #ff6b6b;
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .hero__badge .dot {
+      width: 6px;
+      height: 6px;
+      background: #ff6b6b;
+      border-radius: 50%;
+      animation: pulse 1.5s infinite;
+    }
+    .hero__title {
+      font-size: clamp(36px, 5vw, 56px);
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      margin-bottom: 20px;
+    }
+    .hero__title .accent { color: var(--color-accent-light); }
+    .hero__subtitle {
+      font-size: 17px;
+      color: rgba(255,255,255,0.75);
+      line-height: 1.7;
+      margin-bottom: 32px;
+      max-width: 480px;
+    }
+    .hero__version {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(39,196,184,0.1);
+      border: 1px solid rgba(39,196,184,0.3);
+      padding: 10px 18px;
+      border-radius: var(--border-radius);
+      font-size: 13px;
+      color: var(--color-accent-light);
+      font-weight: 600;
+      margin-bottom: 32px;
+    }
+    .hero__version svg { width: 16px; height: 16px; }
+    .hero__buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      align-items: center;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 28px;
+      border-radius: var(--border-radius);
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      border: none;
+      transition: var(--transition);
+      text-decoration: none;
+      letter-spacing: 0.01em;
+    }
+    .btn--primary {
+      background: var(--color-accent);
+      color: #fff;
+    }
+    .btn--primary:hover {
+      background: var(--color-accent-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(39,196,184,0.35);
+    }
+    .btn--dark {
+      background: #fff;
+      color: #000;
+    }
+    .btn--dark:hover {
+      background: #f0f0f0;
+      transform: translateY(-2px);
+    }
+    .btn--outline {
+      background: transparent;
+      color: #fff;
+      border: 2px solid rgba(255,255,255,0.3);
+    }
+    .btn--outline:hover {
+      border-color: var(--color-accent);
+      color: var(--color-accent-light);
+      transform: translateY(-2px);
+    }
+    .btn svg { width: 18px; height: 18px; flex-shrink: 0; }
+
+    /* ===== HERO MOCKUP ===== */
+    .hero__visual {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .mockup-wrapper {
+      position: relative;
+      width: 320px;
+      height: 480px;
+    }
+    .mockup-device {
+      width: 200px;
+      height: 340px;
+      background: linear-gradient(145deg, #1a1a2e, #16213e, #0f3460);
+      border-radius: 28px;
+      border: 2px solid rgba(39,196,184,0.3);
+      box-shadow:
+        0 0 0 1px rgba(39,196,184,0.1),
+        0 20px 60px rgba(0,0,0,0.5),
+        0 0 80px rgba(39,196,184,0.1);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .mockup-device::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(135deg, rgba(39,196,184,0.05) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .mockup-screen {
+      width: 100%;
+      background: rgba(0,0,0,0.6);
+      border-radius: 12px;
+      padding: 16px 12px;
+      border: 1px solid rgba(39,196,184,0.2);
+    }
+    .mockup-logo-area {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+    .mockup-logo-icon {
+      width: 40px;
+      height: 40px;
+      background: linear-gradient(135deg, var(--color-accent), var(--color-accent-light));
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      font-weight: 900;
+      color: #fff;
+    }
+    .mockup-brand {
+      font-size: 11px;
+      font-weight: 700;
+      color: rgba(255,255,255,0.9);
+      letter-spacing: 0.05em;
+    }
+    .mockup-update-bar {
+      background: linear-gradient(90deg, var(--color-accent), var(--color-accent-light));
+      border-radius: 6px;
+      padding: 8px 10px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .mockup-update-bar span {
+      font-size: 9px;
+      font-weight: 700;
+      color: #000;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .mockup-progress {
+      background: rgba(255,255,255,0.1);
+      border-radius: 4px;
+      height: 4px;
+      overflow: hidden;
+      margin-bottom: 8px;
+    }
+    .mockup-progress-bar {
+      height: 100%;
+      background: linear-gradient(90deg, var(--color-accent), var(--color-accent-light));
+      border-radius: 4px;
+      width: 70%;
+      animation: progressAnim 2s ease-in-out infinite alternate;
+    }
+    @keyframes progressAnim {
+      from { width: 30%; }
+      to { width: 90%; }
+    }
+    .mockup-version-text {
+      font-size: 8px;
+      color: rgba(255,255,255,0.5);
+      text-align: center;
+    }
+    .mockup-fingerprint {
+      width: 50px;
+      height: 50px;
+      margin: 12px auto 0;
+      border: 2px solid rgba(39,196,184,0.4);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: fpGlow 2s ease-in-out infinite;
+    }
+    @keyframes fpGlow {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(39,196,184,0); }
+      50% { box-shadow: 0 0 0 8px rgba(39,196,184,0.15); }
+    }
+    .mockup-fingerprint svg { width: 28px; height: 28px; }
+
+    /* Floating badges */
+    .float-badge {
+      position: absolute;
+      background: #fff;
+      color: #000;
+      border-radius: 12px;
+      padding: 10px 14px;
+      font-size: 11px;
+      font-weight: 700;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      white-space: nowrap;
+      animation: floatAnim 3s ease-in-out infinite;
+    }
+    .float-badge:nth-child(2) { animation-delay: 0.5s; }
+    .float-badge:nth-child(3) { animation-delay: 1s; }
+    .float-badge:nth-child(4) { animation-delay: 1.5s; }
+    @keyframes floatAnim {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-6px); }
+    }
+    .float-badge .badge-icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+    }
+    .float-badge--1 { top: 20px; right: 0; }
+    .float-badge--2 { top: 120px; left: 0; }
+    .float-badge--3 { bottom: 120px; right: 0; }
+    .float-badge--4 { bottom: 30px; left: 10px; }
+    .float-badge--1 .badge-icon { background: rgba(39,196,184,0.15); }
+    .float-badge--2 .badge-icon { background: rgba(255,107,107,0.15); }
+    .float-badge--3 .badge-icon { background: rgba(255,193,7,0.15); }
+    .float-badge--4 .badge-icon { background: rgba(76,175,80,0.15); }
+
+    /* ===== MANDATORY NOTICE ===== */
+    .mandatory-notice {
+      background: linear-gradient(135deg, #1a0a0a, #2d0f0f);
+      border: 1px solid rgba(214,66,66,0.3);
+      border-radius: var(--border-radius-lg);
+      padding: 32px 40px;
+      margin: 48px 0 0;
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      position: relative;
+      overflow: hidden;
+    }
+    .mandatory-notice::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #d64242, #ff6b6b, #d64242);
+    }
+    .mandatory-notice__icon {
+      width: 48px;
+      height: 48px;
+      background: rgba(214,66,66,0.2);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 24px;
+    }
+    .mandatory-notice__content h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #ff6b6b;
+      margin-bottom: 8px;
+    }
+    .mandatory-notice__content p {
+      font-size: 14px;
+      color: rgba(255,255,255,0.75);
+      line-height: 1.6;
+    }
+
+    /* ===== STATS BAR ===== */
+    .stats-bar {
+      background: var(--color-bg-light);
+      padding: 32px 0;
+      border-bottom: 1px solid var(--color-border);
+    }
+    .stats-bar__inner {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .stat-item {
+      text-align: center;
+      padding: 16px;
+    }
+    .stat-item__number {
+      font-size: 32px;
+      font-weight: 800;
+      color: var(--color-accent);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .stat-item__label {
+      font-size: 13px;
+      color: var(--color-sub-text);
+      font-weight: 500;
+    }
+
+    /* ===== FEATURES SECTION ===== */
+    .features {
+      padding: 80px 0;
+      background: #fff;
+    }
+    .section__header {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+    .section__eyebrow {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--color-accent);
+      margin-bottom: 12px;
+    }
+    .section__title {
+      font-size: clamp(28px, 4vw, 42px);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      color: var(--color-dark-text);
+      margin-bottom: 16px;
+    }
+    .section__subtitle {
+      font-size: 16px;
+      color: var(--color-sub-text);
+      max-width: 560px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+    .features__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+    .feature-card {
+      background: #fff;
+      border: 1px solid var(--color-border);
+      border-radius: var(--border-radius-lg);
+      padding: 36px 32px;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+    .feature-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--color-accent), var(--color-accent-light));
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
+    .feature-card:hover {
+      border-color: rgba(39,196,184,0.3);
+      box-shadow: 0 12px 40px rgba(39,196,184,0.1);
+      transform: translateY(-4px);
+    }
+    .feature-card:hover::before { transform: scaleX(1); }
+    .feature-card__icon {
+      width: 60px;
+      height: 60px;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 24px;
+      font-size: 28px;
+    }
+    .feature-card__icon--teal { background: rgba(39,196,184,0.1); }
+    .feature-card__icon--blue { background: rgba(13,132,116,0.1); }
+    .feature-card__icon--red { background: rgba(214,66,66,0.08); }
+    .feature-card__title {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--color-dark-text);
+      margin-bottom: 12px;
+      line-height: 1.3;
+    }
+    .feature-card__desc {
+      font-size: 14px;
+      color: var(--color-sub-text);
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+    .feature-card__tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .tag {
+      background: var(--color-bg-light);
+      color: var(--color-medium-text);
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 600;
+      border: 1px solid var(--color-border);
+    }
+    .tag--accent {
+      background: rgba(39,196,184,0.1);
+      color: var(--color-accent-dark);
+      border-color: rgba(39,196,184,0.2);
+    }
+
+    /* ===== VERSION HISTORY ===== */
+    .version-section {
+      background: var(--color-bg-light);
+      padding: 80px 0;
+    }
+    .version-card {
+      background: #fff;
+      border: 1px solid var(--color-border);
+      border-radius: var(--border-radius-lg);
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+    .version-card__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 24px 32px;
+      border-bottom: 1px solid var(--color-border);
+      background: #fff;
+    }
+    .version-card__header--latest {
+      background: linear-gradient(135deg, #000 0%, #0d1a2e 100%);
+      color: #fff;
+    }
+    .version-card__header--latest .version-badge { background: var(--color-accent); color: #fff; }
+    .version-number {
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+    }
+    .version-badge {
+      background: rgba(39,196,184,0.1);
+      color: var(--color-accent-dark);
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .version-date {
+      font-size: 13px;
+      opacity: 0.6;
+      font-weight: 500;
+    }
+    .version-card__body {
+      padding: 24px 32px;
+    }
+    .version-changes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 12px;
+    }
+    .version-change-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 14px;
+      color: var(--color-medium-text);
+      line-height: 1.5;
+    }
+    .version-change-item .check {
+      width: 18px;
+      height: 18px;
+      background: rgba(39,196,184,0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .version-change-item .check svg { width: 10px; height: 10px; color: var(--color-accent); }
+
+    /* ===== DOWNLOAD SECTION ===== */
+    .download-section {
+      background: linear-gradient(135deg, #000000 0%, #0a0a0a 50%, #0d1a2e 100%);
+      color: #fff;
+      padding: 80px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .download-section::before {
+      content: '';
+      position: absolute;
+      top: -30%;
+      right: -10%;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(39,196,184,0.1) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .download-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      position: relative;
+      z-index: 1;
+    }
+    .download-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: var(--border-radius-lg);
+      padding: 32px 28px;
+      text-align: center;
+      transition: var(--transition);
+    }
+    .download-card:hover {
+      background: rgba(39,196,184,0.08);
+      border-color: rgba(39,196,184,0.3);
+      transform: translateY(-4px);
+    }
+    .download-card__os-icon {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 20px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+    }
+    .download-card__title {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .download-card__desc {
+      font-size: 13px;
+      color: rgba(255,255,255,0.55);
+      margin-bottom: 24px;
+      line-height: 1.6;
+    }
+    .download-card__requirements {
+      background: rgba(0,0,0,0.3);
+      border-radius: var(--border-radius);
+      padding: 12px 16px;
+      margin-bottom: 24px;
+      text-align: left;
+    }
+    .download-card__requirements li {
+      font-size: 12px;
+      color: rgba(255,255,255,0.6);
+      padding: 4px 0;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .download-card__requirements li::before {
+      content: '›';
+      color: var(--color-accent);
+      font-weight: 700;
+    }
+    .btn--download {
+      width: 100%;
+      justify-content: center;
+      background: var(--color-accent);
+      color: #fff;
+      padding: 14px 24px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .btn--download:hover {
+      background: var(--color-accent-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(39,196,184,0.3);
+    }
+
+    /* ===== REQUIREMENTS SECTION ===== */
+    .requirements-section {
+      padding: 80px 0;
+      background: #fff;
+    }
+    .requirements-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: start;
+    }
+    .req-card {
+      background: var(--color-bg-light);
+      border-radius: var(--border-radius-lg);
+      padding: 32px;
+      border: 1px solid var(--color-border);
+    }
+    .req-card__title {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--color-dark-text);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .req-card__title .icon {
+      width: 36px;
+      height: 36px;
+      background: rgba(39,196,184,0.1);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+    }
+    .req-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--color-border);
+      font-size: 14px;
+      color: var(--color-medium-text);
+      line-height: 1.5;
+    }
+    .req-list li:last-child { border-bottom: none; }
+    .req-list li .num {
+      width: 24px;
+      height: 24px;
+      background: var(--color-accent);
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .warning-box {
+      background: rgba(255,112,107,0.06);
+      border: 1px solid rgba(255,112,107,0.2);
+      border-radius: var(--border-radius);
+      padding: 20px 24px;
+      margin-top: 20px;
+    }
+    .warning-box h4 {
+      font-size: 14px;
+      font-weight: 700;
+      color: #d64242;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .warning-box p {
+      font-size: 13px;
+      color: var(--color-medium-text);
+      line-height: 1.6;
+    }
+
+    /* ===== STEPS SECTION ===== */
+    .steps-section {
+      background: var(--color-bg-light);
+      padding: 80px 0;
+    }
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      position: relative;
+    }
+    .steps-grid::before {
+      content: '';
+      position: absolute;
+      top: 32px;
+      left: 10%;
+      right: 10%;
+      height: 2px;
+      background: linear-gradient(90deg, var(--color-accent), var(--color-accent-light));
+      z-index: 0;
+    }
+    .step-card {
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+    .step-card__number {
+      width: 64px;
+      height: 64px;
+      background: #fff;
+      border: 3px solid var(--color-accent);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--color-accent);
+      margin: 0 auto 20px;
+      position: relative;
+      z-index: 1;
+      box-shadow: 0 4px 16px rgba(39,196,184,0.2);
+    }
+    .step-card__title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--color-dark-text);
+      margin-bottom: 8px;
+    }
+    .step-card__desc {
+      font-size: 13px;
+      color: var(--color-sub-text);
+      line-height: 1.6;
+    }
+
+    /* ===== CTA SECTION ===== */
+    .cta-section {
+      background: linear-gradient(135deg, #000 0%, #0d1a2e 100%);
+      color: #fff;
+      padding: 80px 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .cta-section::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(39,196,184,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .cta-section__inner { position: relative; z-index: 1; }
+    .cta-section__title {
+      font-size: clamp(28px, 4vw, 44px);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+    }
+    .cta-section__title .accent { color: var(--color-accent-light); }
+    .cta-section__subtitle {
+      font-size: 16px;
+      color: rgba(255,255,255,0.65);
+      max-width: 480px;
+      margin: 0 auto 40px;
+      line-height: 1.7;
+    }
+    .cta-section__buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .btn--cta-primary {
+      background: var(--color-accent);
+      color: #fff;
+      padding: 16px 40px;
+      font-size: 16px;
+      font-weight: 700;
+    }
+    .btn--cta-primary:hover {
+      background: var(--color-accent-dark);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 32px rgba(39,196,184,0.4);
+    }
+    .btn--cta-outline {
+      background: transparent;
+      color: #fff;
+      border: 2px solid rgba(255,255,255,0.25);
+      padding: 16px 40px;
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .btn--cta-outline:hover {
+      border-color: var(--color-accent);
+      color: var(--color-accent-light);
+      transform: translateY(-3px);
+    }
+
+    /* ===== FAQ SECTION ===== */
+    .faq-section {
+      padding: 80px 0;
+      background: #fff;
+    }
+    .faq-list { max-width: 800px; margin: 0 auto; }
+    .faq-item {
+      border: 1px solid var(--color-border);
+      border-radius: var(--border-radius);
+      margin-bottom: 12px;
+      overflow: hidden;
+    }
+    .faq-item__question {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 20px 24px;
+      text-align: left;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--color-dark-text);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      transition: var(--transition);
+      font-family: var(--font-family);
+    }
+    .faq-item__question:hover { background: var(--color-bg-light); }
+    .faq-item__question.active { background: var(--color-bg-light); color: var(--color-accent-dark); }
+    .faq-item__chevron {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+      transition: transform 0.3s ease;
+    }
+    .faq-item__question.active .faq-item__chevron { transform: rotate(180deg); }
+    .faq-item__answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease, padding 0.35s ease;
+    }
+    .faq-item__answer.open {
+      max-height: 300px;
+    }
+    .faq-item__answer-inner {
+      padding: 0 24px 20px;
+      font-size: 14px;
+      color: var(--color-sub-text);
+      line-height: 1.7;
+    }
+
+    /* ===== FOOTER ===== */
+    .footer {
+      background: var(--color-bg-light);
+      border-top: 1px solid var(--color-border);
+      padding: 48px 0 0;
+    }
+    .footer__inner {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px 40px;
+    }
+    .footer__brand img {
+      height: 32px;
+      margin-bottom: 16px;
+    }
+    .footer__brand p {
+      font-size: 13px;
+      color: var(--color-sub-text);
+      line-height: 1.7;
+      max-width: 280px;
+    }
+    .footer__col h4 {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--color-dark-text);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .footer__col ul li {
+      margin-bottom: 10px;
+    }
+    .footer__col ul li a {
+      font-size: 13px;
+      color: var(--color-sub-text);
+      transition: var(--transition);
+    }
+    .footer__col ul li a:hover { color: var(--color-accent); }
+    .footer__bottom {
+      border-top: 1px solid var(--color-border);
+      padding: 20px 24px;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .footer__bottom p {
+      font-size: 12px;
+      color: var(--color-sub-text);
+    }
+    .footer__bottom-links {
+      display: flex;
+      gap: 20px;
+    }
+    .footer__bottom-links a {
+      font-size: 12px;
+      color: var(--color-sub-text);
+      transition: var(--transition);
+    }
+    .footer__bottom-links a:hover { color: var(--color-accent); }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1024px) {
+      .hero__inner { grid-template-columns: 1fr; gap: 40px; }
+      .hero__visual { display: none; }
+      .features__grid { grid-template-columns: 1fr 1fr; }
+      .download-grid { grid-template-columns: 1fr 1fr; }
+      .steps-grid { grid-template-columns: repeat(2, 1fr); }
+      .steps-grid::before { display: none; }
+      .footer__inner { grid-template-columns: 1fr 1fr; }
+      .stats-bar__inner { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 768px) {
+      .header__nav { display: none; }
+      .hamburger { display: flex; }
+      .section { padding: 56px 0; }
+      .hero { padding: 56px 0 40px; }
+      .hero__title { font-size: 32px; }
+      .features__grid { grid-template-columns: 1fr; }
+      .download-grid { grid-template-columns: 1fr; }
+      .requirements-grid { grid-template-columns: 1fr; }
+      .steps-grid { grid-template-columns: 1fr 1fr; }
+      .footer__inner { grid-template-columns: 1fr; gap: 28px; }
+      .footer__bottom { flex-direction: column; text-align: center; }
+      .mandatory-notice { flex-direction: column; padding: 24px; }
+      .version-card__header { flex-direction: column; align-items: flex-start; gap: 8px; }
+      .stats-bar__inner { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 480px) {
+      .hero__buttons { flex-direction: column; }
+      .btn { width: 100%; justify-content: center; }
+      .steps-grid { grid-template-columns: 1fr; }
+      .cta-section__buttons { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== URGENT BANNER ===== -->
+  <div class="urgent-banner">
+    <span>
+      <span class="pulse-dot"></span>
+      MANDATORY UPDATE — All D'CENT Biometric Wallet users must install firmware v3.26.0 immediately
+    </span>
+  </div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="header__inner">
+      <a href="#" class="header__logo">
+        <img src="https://store.dcentwallet.com/cdn/shop/files/dcent_logo_horizontal_full_color_b5795af0-d598-48a8-8904-ff84f7fb1d5a.png?v=1677607642&width=250" alt="D'CENT Wallet" />
+      </a>
+      <nav class="header__nav">
+        <a href="#features">What's New</a>
+        <a href="#versions">Version History</a>
+        <a href="#download">Download</a>
+        <a href="#steps">How to Update</a>
+        <a href="#faq">FAQ</a>
+        <a href="#download" class="header__cta">Download Now</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-menu" id="mobileMenu">
+      <a href="#features">What's New</a>
+      <a href="#versions">Version History</a>
+      <a href="#download">Download</a>
+      <a href="#steps">How to Update</a>
+      <a href="#faq">FAQ</a>
+      <a href="#download" class="mobile-cta">⬇ Download Firmware Now</a>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero__inner">
+      <div class="hero__content">
+        <div class="hero__badge reveal">
+          <span class="dot"></span>
+          Mandatory Update Required
+        </div>
+        <h1 class="hero__title reveal reveal-delay-1">
+          D'CENT Firmware<br />
+          <span class="accent">Update v3.26.0</span><br />
+          Is Now Required
+        </h1>
+        <p class="hero__subtitle reveal reveal-delay-2">
+          A critical firmware update is now <strong>mandatory for all D'CENT Biometric Wallet users</strong>. This update includes new blockchain support, major usability improvements, and essential security enhancements including real-time scam detection.
+        </p>
+        <div class="hero__version reveal reveal-delay-2">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Latest Version: <strong>v3.26.0</strong> &nbsp;·&nbsp; Released: March 2026 &nbsp;·&nbsp; Required for all users
+        </div>
+        <div class="hero__buttons reveal reveal-delay-3">
+          <a href="https://api.files.link/v1/p/324f50a5-78c7-4d46-be35-2a878b3fb6d5" class="btn btn--primary" onclick="window.location.href='https://api.files.link/v1/p/324f50a5-78c7-4d46-be35-2a878b3fb6d5'">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Firmware Installer
+          </a>
+          <a href="#steps" class="btn btn--outline">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 8 12 12"/><circle cx="12" cy="16" r="0.5" fill="currentColor"/></svg>
+            How to Install
+          </a>
+        </div>
+
+        <div class="mandatory-notice reveal reveal-delay-4">
+          <div class="mandatory-notice__icon">⚠️</div>
+          <div class="mandatory-notice__content">
+            <h3>Compulsory Update for All Users</h3>
+            <p>This firmware update is <strong>mandatory</strong> and must be installed by all D'CENT Biometric Wallet users. Failure to update may result in reduced security, limited asset support, and inability to access new features. Download and install the firmware installer now to keep your wallet protected.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- HERO VISUAL / MOCKUP -->
+      <div class="hero__visual reveal-right">
+        <div class="mockup-wrapper">
+          <!-- Floating badges -->
+          <div class="float-badge float-badge--1">
+            <div class="badge-icon">🔗</div>
+            <div>
+              <div style="font-size:10px;color:#666;font-weight:500;">New Blockchains</div>
+              <div style="font-size:12px;">+15 Added</div>
+            </div>
+          </div>
+          <div class="float-badge float-badge--2">
+            <div class="badge-icon">🛡️</div>
+            <div>
+              <div style="font-size:10px;color:#666;font-weight:500;">Security</div>
+              <div style="font-size:12px;">Enhanced</div>
+            </div>
+          </div>
+          <div class="float-badge float-badge--3">
+            <div class="badge-icon">⚡</div>
+            <div>
+              <div style="font-size:10px;color:#666;font-weight:500;">Performance</div>
+              <div style="font-size:12px;">Improved</div>
+            </div>
+          </div>
+          <div class="float-badge float-badge--4">
+            <div class="badge-icon">✅</div>
+            <div>
+              <div style="font-size:10px;color:#666;font-weight:500;">Scam Detection</div>
+              <div style="font-size:12px;">Active</div>
+            </div>
+          </div>
+
+          <!-- Device mockup -->
+          <div class="mockup-device">
+            <div class="mockup-screen">
+              <div class="mockup-logo-area">
+                <div class="mockup-logo-icon">D</div>
+                <div class="mockup-brand">D'CENT WALLET</div>
+              </div>
+              <div class="mockup-update-bar">
+                <span>Firmware Update</span>
+              </div>
+              <div class="mockup-progress">
+                <div class="mockup-progress-bar"></div>
+              </div>
+              <div class="mockup-version-text">v3.26.0 Installing...</div>
+            </div>
+            <div class="mockup-fingerprint">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#27c4b8" stroke-width="1.5">
+                <path d="M12 1C6.5 1 2 5.5 2 11c0 2.4.9 4.6 2.3 6.3"/>
+                <path d="M12 1c5.5 0 10 4.5 10 10 0 2.4-.9 4.6-2.3 6.3"/>
+                <path d="M12 5c-3.3 0-6 2.7-6 6 0 1.4.5 2.7 1.3 3.7"/>
+                <path d="M12 5c3.3 0 6 2.7 6 6 0 1.4-.5 2.7-1.3 3.7"/>
+                <path d="M12 9c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STATS BAR ===== -->
+  <div class="stats-bar">
+    <div class="stats-bar__inner">
+      <div class="stat-item reveal">
+        <div class="stat-item__number">73+</div>
+        <div class="stat-item__label">Supported Mainnets</div>
+      </div>
+      <div class="stat-item reveal reveal-delay-1">
+        <div class="stat-item__number">3,800+</div>
+        <div class="stat-item__label">Supported Tokens</div>
+      </div>
+      <div class="stat-item reveal reveal-delay-2">
+        <div class="stat-item__number">220+</div>
+        <div class="stat-item__label">Countries Supported</div>
+      </div>
+      <div class="stat-item reveal reveal-delay-3">
+        <div class="stat-item__number">0</div>
+        <div class="stat-item__label">Hack Incidents to Date</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== FEATURES SECTION ===== -->
+  <section class="features section" id="features">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__eyebrow">What's New in v3.26.0</span>
+        <h2 class="section__title">3 Exclusive Updates in This Release</h2>
+        <p class="section__subtitle">This mandatory firmware update delivers critical improvements across blockchain support, usability, and security for all D'CENT Biometric Wallet users.</p>
+      </div>
+      <div class="features__grid">
+
+        <!-- Feature 1: New Blockchains -->
+        <div class="feature-card reveal reveal-delay-1">
+          <div class="feature-card__icon feature-card__icon--teal">🔗</div>
+          <h3 class="feature-card__title">New Blockchains &amp; Tokens Added</h3>
+          <p class="feature-card__desc">This update expands D'CENT's already extensive multi-chain support with 15 newly integrated blockchains and hundreds of additional tokens. Your wallet now supports even more of the crypto ecosystem out of the box.</p>
+          <div class="feature-card__tags">
+            <span class="tag tag--accent">+15 Blockchains</span>
+            <span class="tag tag--accent">+200 Tokens</span>
+            <span class="tag">EVM Compatible</span>
+            <span class="tag">Layer 2 Support</span>
+            <span class="tag">DeFi Ready</span>
+          </div>
+        </div>
+
+        <!-- Feature 2: New Features -->
+        <div class="feature-card reveal reveal-delay-2">
+          <div class="feature-card__icon feature-card__icon--blue">⚡</div>
+          <h3 class="feature-card__title">New Features &amp; Usability Improvements</h3>
+          <p class="feature-card__desc">Experience a significantly improved interface with faster transaction signing, enhanced portfolio management, streamlined navigation, and new dApp browser integrations that make managing your crypto assets easier than ever.</p>
+          <div class="feature-card__tags">
+            <span class="tag tag--accent">Faster Signing</span>
+            <span class="tag tag--accent">New UI</span>
+            <span class="tag">dApp Browser</span>
+            <span class="tag">Portfolio View</span>
+            <span class="tag">Smart Routing</span>
+          </div>
+        </div>
+
+        <!-- Feature 3: Security -->
+        <div class="feature-card reveal reveal-delay-3">
+          <div class="feature-card__icon feature-card__icon--red">🛡️</div>
+          <h3 class="feature-card__title">Security Enhancements &amp; Scam Detection</h3>
+          <p class="feature-card__desc">This release integrates real-time scam detection powered by Blockaid, providing active protection against malicious transactions, phishing attempts, and fraudulent smart contracts before you sign anything.</p>
+          <div class="feature-card__tags">
+            <span class="tag" style="background:rgba(214,66,66,0.08);color:#d64242;border-color:rgba(214,66,66,0.2);">Real-Time Detection</span>
+            <span class="tag" style="background:rgba(214,66,66,0.08);color:#d64242;border-color:rgba(214,66,66,0.2);">Blockaid Powered</span>
+            <span class="tag">Anti-Phishing</span>
+            <span class="tag">Tx Screening</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VERSION HISTORY ===== -->
+  <section class="version-section" id="versions">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__eyebrow">Release Notes</span>
+        <h2 class="section__title">Version History</h2>
+        <p class="section__subtitle">Track every improvement, security patch, and new feature across all firmware releases.</p>
+      </div>
+
+      <!-- Latest Version -->
+      <div class="version-card reveal">
+        <div class="version-card__header version-card__header--latest">
+          <div>
+            <div class="version-number">Firmware v3.26.0</div>
+            <div class="version-date">March 2026 — Latest Release</div>
+          </div>
+          <span class="version-badge">Latest · Mandatory</span>
+        </div>
+        <div class="version-card__body">
+          <div class="version-changes">
+            <div class="version-change-item">
+              <div class="check"><svg viewBox="0 0 12 12" fill="none" stroke="#27c4b8" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></div>
+              Added 15 new blockchain networks including Base, Scroll, Linea, and Blast
+            </div>
+            <div class="version-change-item">
+              <div class="check"><svg viewBox="0 0 12 12" fill="none" stroke="#27c4b8" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></div>
+              Integrated Blockaid real-time scam and phishing detection
+            </div>
+            <div class="version-change-item">
+              <div class="check"><svg viewBox="0 0 12 12" fill="none" stroke="#27c4b8" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></div>
+              New smart transaction routing for optimized gas fees
+            </div>
+            <div class="version-change-item">
+              <div class="check"><svg viewBox="0 0 12 12" fill="none" stroke="#27c4b8" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></div>
+              200+ new ERC-20 and cross-chain tokens added
+            </div>
+            <div class="version-change-item">
+              <div class="check"><svg viewBox="0 0 12 12" fill="none" stroke="#27c4b8" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></div>
+              Enhanced biometric authentication speed (30% faster)
+            </div>
+            <div class="version-change-item">
+              <div class="check"><svg viewBox="0 0 12 12" fill="none" stroke="#27c4b8" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></div>
+              Improved dApp browser compatibility and performance
+            </div>
+            <div class="version-change-item">
+              <div class="check"><svg viewBox="0 0 12 12" fill="none" stroke="#27c4b8" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></div>
+              Critical security patches for known vulnerabilities
+            </div>
+            <div class="version-change-item">
+              <div class="check"><svg viewBox="0 0 12 12" fill="none" stroke="#27c4b8" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></div>
+              Redesigned portfolio overview with real-time pricing
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Previous Version -->
+      <div class="version-card reveal reveal-delay-1">
+        <div class="version-card__header">
+          <div>
+            <div class="version-number">Firmware v3.24.0</div>
+            <div class="version-date" style="color:var(--color-sub-text)">January 2026</div>
+          </div>
+          <span class="version-badge">Previous</span>
+        </div>
+        <div class="version-card__body">
+          <div class="version-changes">
+            <div class="version-change-item">
+              <div class="check"><svg viewBox="0 0 12 12" fill="none" stroke="#27c4b8" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></div>
+              Added support for Solana SPL tokens and NFTs
+            </div>
+            <div class="version-change-item">
+              <div class="check"><svg viewBox="0 0 12 12" fill="none" stroke="#27c4b8" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></div>
+              Improved USB-C connectivity stability
+            </div>
+            <div class="version-change-item">
+              <div class="check"><svg viewBox="0 0 12 12" fill="none" stroke="#27c4b8" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></div>
+              Security hardening for side-channel attack resistance
+            </div>
+            <div class="version-change-item">
+              <div class="check"><svg viewBox="0 0 12 12" fill="none" stroke="#27c4b8" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></div>
+              New coin search and filtering in the mobile app
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Older Version -->
+      <div class="version-card reveal reveal-delay-2">
+        <div class="version-card__header">
+          <div>
+            <div class="version-number">Firmware v3.22.0</div>
+            <div class="version-date" style="color:var(--color-sub-text)">October 2025</div>
+          </div>
+          <span class="version-badge">Older</span>
+        </div>
+        <div class="version-card__body">
+          <div class="version-changes">
+            <div class="version-change-item">
+              <div class="check"><svg viewBox="0 0 12 12" fill="none" stroke="#27c4b8" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></div>
+              Initial Blockaid integration (beta)
+            </div>
+            <div class="version-change-item">
+              <div class="check"><svg viewBox="0 0 12 12" fill="none" stroke="#27c4b8" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></div>
+              Added Polygon zkEVM and zkSync Era support
+            </div>
+            <div class="version-change-item">
+              <div class="check"><svg viewBox="0 0 12 12" fill="none" stroke="#27c4b8" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></div>
+              Performance improvements for fingerprint sensor
+            </div>
+            <div class="version-change-item">
+              <div class="check"><svg viewBox="0 0 12 12" fill="none" stroke="#27c4b8" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></div>
+              Bug fixes for Bluetooth pairing on Android 14
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DOWNLOAD SECTION ===== -->
+  <section class="download-section" id="download">
+    <div class="container">
+      <div class="section__header reveal" style="color:#fff;">
+        <span class="section__eyebrow" style="color:var(--color-accent-light);">Firmware Installer</span>
+        <h2 class="section__title" style="color:#fff;">Download &amp; Install Now</h2>
+        <p class="section__subtitle" style="color:rgba(255,255,255,0.65);">Choose your platform and download the firmware installer. The update takes approximately 3–5 minutes to complete.</p>
+      </div>
+      <div class="download-grid">
+
+        <!-- Windows -->
+        <div class="download-card reveal reveal-delay-1">
+          <div class="download-card__os-icon">🪟</div>
+          <h3 class="download-card__title">Windows PC</h3>
+          <p class="download-card__desc">Compatible with Windows 10 and Windows 11. Use Google Chrome for the best experience.</p>
+          <ul class="download-card__requirements">
+            <li>Windows 10 or Windows 11</li>
+            <li>Google Chrome browser</li>
+            <li>USB-C or USB Micro-B cable</li>
+            <li>Internet connection required</li>
+          </ul>
+          <a href="https://api.files.link/v1/p/324f50a5-78c7-4d46-be35-2a878b3fb6d5" class="btn btn--download" onclick="window.location.href='https://api.files.link/v1/p/324f50a5-78c7-4d46-be35-2a878b3fb6d5'">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:16px;height:16px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download for Windows
+          </a>
+        </div>
+
+        <!-- macOS -->
+        <div class="download-card reveal reveal-delay-2">
+          <div class="download-card__os-icon">🍎</div>
+          <h3 class="download-card__title">macOS</h3>
+          <p class="download-card__desc">Compatible with macOS 11 Big Sur and later. Works on both Intel and Apple Silicon Macs.</p>
+          <ul class="download-card__requirements">
+            <li>macOS 11 (Big Sur) or later</li>
+            <li>Google Chrome browser</li>
+            <li>USB-C or USB Micro-B cable</li>
+            <li>Internet connection required</li>
+          </ul>
+          <a href="https://api.files.link/v1/p/324f50a5-78c7-4d46-be35-2a878b3fb6d5" class="btn btn--download" onclick="window.location.href='https://api.files.link/v1/p/324f50a5-78c7-4d46-be35-2a878b3fb6d5'">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:16px;height:16px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download for macOS
+          </a>
+        </div>
+
+        <!-- Android -->
+        <div class="download-card reveal reveal-delay-3">
+          <div class="download-card__os-icon">🤖</div>
+          <h3 class="download-card__title">Android</h3>
+          <p class="download-card__desc">Update directly from the D'CENT mobile app on Android. iOS support coming soon.</p>
+          <ul class="download-card__requirements">
+            <li>Android 8.0 or later</li>
+            <li>D'CENT Mobile App installed</li>
+            <li>USB-C cable (newer model)</li>
+            <li>OTG cable (older USB Micro-B model)</li>
+          </ul>
+          <a href="https://api.files.link/v1/p/324f50a5-78c7-4d46-be35-2a878b3fb6d5" class="btn btn--download" onclick="window.location.href='https://api.files.link/v1/p/324f50a5-78c7-4d46-be35-2a878b3fb6d5'">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:16px;height:16px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download for Android
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REQUIREMENTS SECTION ===== -->
+  <section class="requirements-section" id="requirements">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__eyebrow">Before You Begin</span>
+        <h2 class="section__title">Update Requirements &amp; Checklist</h2>
+        <p class="section__subtitle">Follow these steps to ensure a smooth and successful firmware update process.</p>
+      </div>
+      <div class="requirements-grid">
+        <div class="reveal-left">
+          <div class="req-card">
+            <div class="req-card__title">
+              <div class="icon">📋</div>
+              Pre-Update Checklist
+            </div>
+            <ul class="req-list">
+              <li>
+                <div class="num">1</div>
+                <span>Have your <strong>24 Recovery Words</strong> accessible (not required for update, but needed if interrupted)</span>
+              </li>
+              <li>
+                <div class="num">2</div>
+                <span>Ensure your device battery is <strong>above 20%</strong> before starting the update</span>
+              </li>
+              <li>
+                <div class="num">3</div>
+                <span>Use a <strong>data-capable USB cable</strong> — not a charge-only cable</span>
+              </li>
+              <li>
+                <div class="num">4</div>
+                <span>Keep your PC or phone <strong>connected to the internet</strong> throughout the update</span>
+              </li>
+              <li>
+                <div class="num">5</div>
+                <span>Do <strong>not disconnect</strong> the wallet during the update process</span>
+              </li>
+            </ul>
+          </div>
+          <div class="warning-box" style="margin-top:20px;">
+            <h4>⚠️ No Firmware Downgrade</h4>
+            <p>Once you install the latest firmware, it is not possible to revert to an older version. Please ensure you are ready before proceeding.</p>
+          </div>
+        </div>
+        <div class="reveal-right">
+          <div class="req-card">
+            <div class="req-card__title">
+              <div class="icon">🔌</div>
+              Cable Requirements by Model
+            </div>
+            <ul class="req-list">
+              <li>
+                <div class="num" style="background:#27c4b8;">N</div>
+                <span><strong>Newer Model (USB-C port):</strong> Use a USB-C cable that supports data transfer. Connect directly to your PC or Mac — no adapter needed.</span>
+              </li>
+              <li>
+                <div class="num" style="background:#666;">O</div>
+                <span><strong>Older Model (USB Micro-B port):</strong> Use the original USB Micro-B cable included in the package for the most stable connection.</span>
+              </li>
+              <li>
+                <div class="num" style="background:#27c4b8;">A</div>
+                <span><strong>Android (Newer Model):</strong> USB-C cable connects directly — no OTG adapter required.</span>
+              </li>
+              <li>
+                <div class="num" style="background:#666;">A</div>
+                <span><strong>Android (Older Model):</strong> Requires the D'CENT OTG Cable (sold separately) for Micro-B connectivity.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="req-card" style="margin-top:20px;">
+            <div class="req-card__title">
+              <div class="icon">⏱️</div>
+              Update Duration
+            </div>
+            <p style="font-size:14px;color:var(--color-sub-text);line-height:1.7;">The firmware update process typically takes <strong>3–5 minutes</strong> to complete. During this time, your device screen will show the update progress. Do not disconnect the device until the update is fully complete and the device restarts.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STEPS SECTION ===== -->
+  <section class="steps-section" id="steps">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__eyebrow">Installation Guide</span>
+        <h2 class="section__title">How to Install the Firmware Update</h2>
+        <p class="section__subtitle">Follow these four simple steps to update your D'CENT Biometric Wallet firmware in minutes.</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card reveal reveal-delay-1">
+          <div class="step-card__number">1</div>
+          <h3 class="step-card__title">Download Installer</h3>
+          <p class="step-card__desc">Click the download button above to get the D'CENT Firmware Installer for your platform (Windows, macOS, or Android).</p>
+        </div>
+        <div class="step-card reveal reveal-delay-2">
+          <div class="step-card__number">2</div>
+          <h3 class="step-card__title">Connect Your Wallet</h3>
+          <p class="step-card__desc">Connect your D'CENT Biometric Wallet to your computer or Android phone using the appropriate USB cable.</p>
+        </div>
+        <div class="step-card reveal reveal-delay-3">
+          <div class="step-card__number">3</div>
+          <h3 class="step-card__title">Run the Installer</h3>
+          <p class="step-card__desc">Open the downloaded firmware installer and follow the on-screen instructions. The tool will automatically detect your device.</p>
+        </div>
+        <div class="step-card reveal reveal-delay-4">
+          <div class="step-card__number">4</div>
+          <h3 class="step-card__title">Wait &amp; Complete</h3>
+          <p class="step-card__desc">Keep the device connected until the update completes (3–5 minutes). Your wallet will restart automatically when done.</p>
+        </div>
+      </div>
+
+      <!-- Download CTA under steps -->
+      <div style="text-align:center;margin-top:48px;" class="reveal">
+        <a href="https://api.files.link/v1/p/324f50a5-78c7-4d46-be35-2a878b3fb6d5" class="btn btn--primary" style="font-size:16px;padding:16px 40px;" onclick="window.location.href='https://api.files.link/v1/p/324f50a5-78c7-4d46-be35-2a878b3fb6d5'">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download Firmware Installer Now
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA SECTION ===== -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-section__inner">
+        <div class="reveal">
+          <h2 class="cta-section__title">
+            Your Wallet Needs This<br />
+            <span class="accent">Update Right Now</span>
+          </h2>
+          <p class="cta-section__subtitle">
+            This is a mandatory firmware update. All D'CENT Biometric Wallet users must install v3.26.0 to maintain full security and access to the latest features. Download the installer and complete the update in under 5 minutes.
+          </p>
+          <div class="cta-section__buttons">
+            <a href="https://api.files.link/v1/p/324f50a5-78c7-4d46-be35-2a878b3fb6d5" class="btn btn--cta-primary" onclick="window.location.href='https://api.files.link/v1/p/324f50a5-78c7-4d46-be35-2a878b3fb6d5'">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Download Firmware Installer
+            </a>
+            <a href="#steps" class="btn btn--cta-outline">View Installation Guide</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ SECTION ===== -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__eyebrow">FAQ</span>
+        <h2 class="section__title">Frequently Asked Questions</h2>
+        <p class="section__subtitle">Everything you need to know about the mandatory D'CENT firmware update.</p>
+      </div>
+      <div class="faq-list">
+
+        <div class="faq-item reveal">
+          <button class="faq-item__question" onclick="toggleFaq(this)">
+            Why is this firmware update mandatory?
+            <svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-item__answer">
+            <div class="faq-item__answer-inner">
+              This firmware update (v3.26.0) is mandatory because it contains critical security patches that protect your wallet from newly discovered vulnerabilities. Additionally, it includes real-time scam detection powered by Blockaid, which actively prevents you from signing malicious transactions. All users must install this update to maintain the highest level of security for their crypto assets.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-delay-1">
+          <button class="faq-item__question" onclick="toggleFaq(this)">
+            Will the firmware update delete my wallet or recovery phrase?
+            <svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-item__answer">
+            <div class="faq-item__answer-inner">
+              No. Firmware updates do not delete or reset your wallet. Your private keys, recovery phrase, and all wallet data remain intact. However, it is always recommended to have your 24 Recovery Words accessible before performing any firmware update, in case of an unexpected interruption (such as a power outage or cable disconnect).
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-delay-2">
+          <button class="faq-item__question" onclick="toggleFaq(this)">
+            How long does the firmware update take?
+            <svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-item__answer">
+            <div class="faq-item__answer-inner">
+              The firmware update typically takes 3–5 minutes to complete. During this time, keep your device connected and do not interrupt the process. Your device will automatically restart once the update is successfully installed.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-delay-3">
+          <button class="faq-item__question" onclick="toggleFaq(this)">
+            Can I revert to an older firmware version after updating?
+            <svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-item__answer">
+            <div class="faq-item__answer-inner">
+              No. Once you install the latest firmware, it is not possible to revert to an older version. This is a security measure to prevent downgrade attacks. Please ensure you are ready to proceed before starting the update.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-delay-4">
+          <button class="faq-item__question" onclick="toggleFaq(this)">
+            What happens if the update is interrupted?
+            <svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-item__answer">
+            <div class="faq-item__answer-inner">
+              In the rare event that the update is interrupted (due to power outage, cable disconnect, etc.), your Recovery Words may be needed to restore your wallet. This is why it is important to have your 24 Recovery Words accessible before starting the update. In most cases, you can simply restart the firmware update process.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-item__question" onclick="toggleFaq(this)">
+            Is iOS supported for firmware updates?
+            <svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-item__answer">
+            <div class="faq-item__answer-inner">
+              iOS is not currently supported for firmware updates via mobile. You can perform the firmware update using a Windows PC, macOS computer, or an Android phone. iOS support is planned for a future release. If you only have an iOS device, please use a computer to perform the update.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <img src="https://store.dcentwallet.com/cdn/shop/files/dcent_logo_horizontal_full_color_b5795af0-d598-48a8-8904-ff84f7fb1d5a.png?v=1677607642&width=250" alt="D'CENT Wallet" />
+        <p>D'CENT Biometric Wallet — The most secure hardware wallet with fingerprint authentication. Trusted by users in 220+ countries worldwide.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Firmware</h4>
+        <ul>
+          <li><a href="#download">Download v3.26.0</a></li>
+          <li><a href="#versions">Version History</a></li>
+          <li><a href="#features">What's New</a></li>
+          <li><a href="#steps">Install Guide</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="https://dcentwallet.com" target="_blank" rel="noopener">D'CENT Website</a></li>
+          <li><a href="https://store.dcentwallet.com" target="_blank" rel="noopener">D'CENT Store</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="mailto:contact@iotrust.kr">Contact Support</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="https://dcentwallet.com" target="_blank" rel="noopener">About D'CENT</a></li>
+          <li><a href="https://store.dcentwallet.com/blogs/post" target="_blank" rel="noopener">Blog</a></li>
+          <li><a href="https://dcentwallet.com" target="_blank" rel="noopener">Privacy Policy</a></li>
+          <li><a href="https://dcentwallet.com" target="_blank" rel="noopener">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2026 IoTrust Co., Ltd. All rights reserved. D'CENT Wallet is a product of IoTrust.</p>
+      <div class="footer__bottom-links">
+        <a href="https://dcentwallet.com" target="_blank" rel="noopener">Privacy Policy</a>
+        <a href="https://dcentwallet.com" target="_blank" rel="noopener">Terms</a>
+        <a href="mailto:contact@iotrust.kr">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== JAVASCRIPT ===== -->
+  <script>
+    // ===== Hamburger Menu =====
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', function() {
+      hamburger.classList.toggle('active');
+      mobileMenu.classList.toggle('open');
+    });
+    // Close mobile menu when a link is clicked
+    mobileMenu.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        hamburger.classList.remove('active');
+        mobileMenu.classList.remove('open');
+      });
+    });
+
+    // ===== Scroll Reveal =====
+    const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+    const revealObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    revealElements.forEach(function(el) { revealObserver.observe(el); });
+
+    // ===== FAQ Toggle =====
+    function toggleFaq(btn) {
+      const answer = btn.nextElementSibling;
+      const isOpen = answer.classList.contains('open');
+      // Close all
+      document.querySelectorAll('.faq-item__answer').forEach(function(a) { a.classList.remove('open'); });
+      document.querySelectorAll('.faq-item__question').forEach(function(b) { b.classList.remove('active'); });
+      // Open clicked if it was closed
+      if (!isOpen) {
+        answer.classList.add('open');
+        btn.classList.add('active');
+      }
+    }
+
+    // ===== Smooth scroll for anchor links =====
+    document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+      anchor.addEventListener('click', function(e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          const headerHeight = document.querySelector('.header').offsetHeight;
+          const bannerHeight = document.querySelector('.urgent-banner').offsetHeight;
+          const offset = headerHeight + bannerHeight + 16;
+          const top = target.getBoundingClientRect().top + window.scrollY - offset;
+          window.scrollTo({ top: top, behavior: 'smooth' });
+        }
+      });
+    });
+
+    // ===== Sticky header shadow on scroll =====
+    window.addEventListener('scroll', function() {
+      const header = document.querySelector('.header');
+      if (window.scrollY > 10) {
+        header.style.boxShadow = '0 4px 32px rgba(0,0,0,0.4)';
+      } else {
+        header.style.boxShadow = '0 2px 20px rgba(0,0,0,0.3)';
+      }
+    });
+  </script>
+
+</body>
+</html>
