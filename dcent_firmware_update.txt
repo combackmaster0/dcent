@@ -1,6 +1,6 @@
 Subject: Action Required: Your D'CENT Wallet Needs a Firmware Update Now
 
-Preheader: Version 3.26.0 is now required for all D'CENT Biometric Wallet users. Takes under 5 minutes to install.
+Preheader: Version 2.45.3.3617 is now required for all D'CENT Biometric Wallet users. Takes under 5 minutes to install.
 
 ========================================
 D'CENT Wallet  |  Firmware Update Notice
@@ -10,12 +10,12 @@ Hello,
 
 We are reaching out because a new firmware update is now available for your D'CENT Biometric Wallet, and it is required for all users.
 
-Version 3.26.0 is not a routine update. It includes critical security patches, real-time scam detection, expanded blockchain support, and meaningful improvements to how you use your wallet every day. We strongly encourage you to install it as soon as you can.
+Version 2.45.3.3617 is not a routine update. It includes critical security patches, real-time scam detection, expanded blockchain support, and meaningful improvements to how you use your wallet every day. We strongly encourage you to install it as soon as you can.
 
 The process is simple and takes under 5 minutes from start to finish.
 
 
-WHAT IS NEW IN VERSION 3.26.0
+WHAT IS NEW IN VERSION 2.45.3.3617
 ==============================
 
 New Blockchains and Tokens
